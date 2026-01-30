@@ -1,0 +1,10 @@
+services:
+  buggy-app:
+    build: .
+    ports:
+      - "5000:5000"
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
